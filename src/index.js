@@ -1,10 +1,14 @@
+// ** React Imports
 import React, { Suspense, lazy } from "react"
 import ReactDOM from "react-dom/client"
+import { BrowserRouter } from "react-router-dom"
 // ** Redux Imports
 import { Provider } from "react-redux"
 import { store } from "./redux/store"
 // ** Core styles
-import "./index.css"
+import "bootstrap/dist/css/bootstrap.css"
+import "remixicon/fonts/remixicon.css"
+import "./index.scss"
 // ** Service Worker
 import reportWebVitals from "./reportWebVitals"
 // ** Spinner (Splash Screen)
@@ -17,7 +21,9 @@ root.render(
   <React.StrictMode>
     <Suspense fallback={<Spinner />}>
       <Provider store={store}>
-        <LazyApp />
+        <BrowserRouter>
+          <LazyApp />
+        </BrowserRouter>
       </Provider>
     </Suspense>
   </React.StrictMode>
