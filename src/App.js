@@ -1,6 +1,6 @@
-// ** Router Import
-import Router from "./router/Router"
+// ** Custom Import
+import Layout from "./Components/Layout"
 
-const App = () => <Router />
+const App = () => <Layout />
 
 export default App

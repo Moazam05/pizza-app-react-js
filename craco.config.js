@@ -21,7 +21,8 @@ module.exports = {
       "@shared": path.resolve(__dirname, "src/shared"),
       "@store": path.resolve(__dirname, "src/redux"),
       "@styles": path.resolve(__dirname, "src/@template/scss"),
-      "@views": path.resolve(__dirname, "src/views")
+      "@views": path.resolve(__dirname, "src/views"),
+      "@router": path.resolve(__dirname, "src/router")
     }
   }
 }
